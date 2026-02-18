@@ -11,6 +11,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
  img {
     display: block;
+    width: 100%;
+        height: auto;
  }
 
 
@@ -25,8 +27,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
     /* max-width: 1158px; */
     max-width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
 }
 
@@ -380,7 +382,7 @@ ul {
 
 
 .ourteam-img {
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .ourtime-title {
@@ -454,15 +456,18 @@ ul {
 
 
 .section-ourportfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .ourportfolio-list {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    /* gap: 48px 24px; */
+    gap: 48px;
 }
 
 
@@ -471,7 +476,8 @@ ul {
     border-bottom: 1px solid #e7e9fc;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
-        width: 360px;
+        /* width: 360px; */
+        /* width: 100%; */
         padding: 32px 16px;
 
 }
@@ -490,7 +496,9 @@ ul {
 }
 
 .ourportfolio-list-item {
-    width: 360px;
+    /* width: 360px; */
+    /* width: 288px; */
+    width: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1100,8 +1108,27 @@ textarea::placeholder {
         max-width: 768px;
     }
     
-
+/* ------------------------------------------- */
     
+        .ourteam-list {
+            gap: 64px 24px;
+        }
+
+                .ourteam-list-item {
+                    width: calc((100% - 64px)/2);
+                }
+
+/* ---------------------------------------------------- */
+
+        .ourportfolio-list {
+            gap: 72px 24px;
+        }
+
+                .ourportfolio-list-item {
+                    width: calc((100% - 24px)/2);
+                    
+                    
+                }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1119,6 +1146,8 @@ textarea::placeholder {
 
     .container {
         max-width: 1158px;
+        padding-left: 15px;
+            padding-right: 15px;
     }
     
     .section-title-text {
@@ -1133,6 +1162,35 @@ textarea::placeholder {
         .section-svg-div {
             display: flex;
         }
+/* ----------------------------------------------------- */
 
+        .section-ourteam {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        }
+
+    .ourteam-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .ourteam-list-item {
+        width: calc((100% - 24px)/4);
+    }
+
+/* ----------------------------------------------------- */
+
+        .section-ourportfolio {
+            padding-top: 120px;
+        padding-bottom: 120px;
+        }
+
+                .ourportfolio-list {
+                    gap: 48px 24px;
+                }
+
+                .ourportfolio-list-item {
+                    width: calc((100% - 48px)/3);
+                }
 
 }
