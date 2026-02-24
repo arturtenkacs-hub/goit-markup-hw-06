@@ -368,6 +368,8 @@ height: 100%;
     /* width: 1440px; */
     max-width: 320px;
     margin: 0 auto;
+    padding-top: 72px;
+        padding-bottom: 72px;
 
     @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image-mob-2x.jpg);
@@ -381,8 +383,8 @@ height: 100%;
 }
 
 .hero-wraper {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    /* padding-top: 72px;
+    padding-bottom: 72px; */
     /* padding-top: 188px;
         padding-bottom: 188px; */
     }
@@ -402,7 +404,7 @@ height: 100%;
         max-width: 216px;
         /* max-width: 496px; */
         margin: 0 auto;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 
 .hero-button {
@@ -485,6 +487,7 @@ height: 100%;
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
+        text-align: center;
 }
 
 .section-text {
@@ -880,8 +883,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 }
 
 .footer-form-div {
-    /* margin-left: 80px; */
-    /* max-width: 453px; */
     max-width: 288px;
     text-align: center;
 }
@@ -1312,7 +1313,7 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
     
     .section-list-item {
-        width: calc((100% - 72px)/2);
+        width: calc((100% - 24px)/2);
     }
 
         .section-list-featchers {
@@ -1322,6 +1323,10 @@ textarea::placeholder {
     .container {
         max-width: 768px;
     }
+
+        .section-title-text {
+            text-align: start;
+        }
     
 /* ------------------------------------------- */
     
@@ -1354,6 +1359,8 @@ textarea::placeholder {
                 .hero-subtitle {
                     max-width: 768px;
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image-tab.jpg);
+                        padding-top: 112px;
+                            padding-bottom: 112px;
 
                     @media screen and (min-resolution: 2x),
                         (-webkit-min-device-pixel-ratio: 2) {
@@ -1362,16 +1369,16 @@ textarea::placeholder {
                         }
                 }
                 
-                .hero-wraper {
+                /* .hero-wraper {
                     padding-top: 112px;
                     padding-bottom: 112px;
-                }
+                } */
                 
                 .hero-title {
                     font-size: 56px;
                     line-height: 1.07;
                     max-width: 496px;
-                    padding-bottom: 36px;
+                    margin-bottom: 36px;
                 }
 
 /* ------------------------------------------------------------- */
@@ -1451,6 +1458,16 @@ textarea::placeholder {
 .header-adress-list {
     flex-direction: column;
     gap: 12px;
+
+.header-adress-list-item {
+    font-weight: 400;
+    font-size: 12px;
+    
+    /* line-height: 14px; */
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    
+        }
 }
 
 
@@ -1560,6 +1577,8 @@ textarea::placeholder {
 .hero-subtitle {
     max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
+    padding-top: 188px;
+        padding-bottom: 188px;
 
     @media screen and (min-resolution: 2x),
         (-webkit-min-device-pixel-ratio: 2) {
@@ -1568,17 +1587,17 @@ textarea::placeholder {
         }
 }
 
-.hero-wraper {
+/* .hero-wraper {
             padding-top: 188px;
             padding-bottom: 188px;
-}
+} */
 
 
     .hero-title {
             font-size: 56px;
             line-height: 1.07;
             max-width: 496px;
-            padding-bottom: 72px;
+            margin-bottom: 72px;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -1640,6 +1659,15 @@ max-width: 1158px;
 .header-adress-list {
     flex-direction: row;
     gap: 40px;
+}
+
+.header-adress-list-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
 }
 
 }
